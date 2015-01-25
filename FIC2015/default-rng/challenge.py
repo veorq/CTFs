@@ -13,6 +13,7 @@ def encrypt(key, iv, plaintext):
     cipher = DES.new(key, DES.MODE_CBC, iv)
     return cipher.encrypt(plaintext)
 
+
 def decrypt(key, iv, ciphertext):
     assert len(key) == 8 
     assert len(iv) == 8 
